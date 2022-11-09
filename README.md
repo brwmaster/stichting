@@ -1,6 +1,11 @@
+<img src="./assets/images/logo.svg" alt="logo" width="200"/>
+
 # Stichting met uitgestrekte hand
 
+
+
 This is the website for the Dutch non profit organisation `Stiching met uitgestrekte hand `
+
 
 ## Organisation
 
