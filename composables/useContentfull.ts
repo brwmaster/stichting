@@ -1,8 +1,8 @@
-import contentful from "contentful";
+import * as contentful from 'contentful'
 
 const config = {
-    space: '',
-    accessToken: ''
+    space: 'ey7zpaudq56d',
+    accessToken: 'fIAK8m3xJqHqq5IDUM-NMqLKvQHqr_4yA1WV_V_Wdgk'
 }
 
-export const useContentfull = () => contentful.createClient(config)
+export const useContentful = async () => await contentful.createClient(config)
