@@ -4,7 +4,7 @@
 
 <template>
   <div>
-
+    <h1>Stichting met uitgestrekte hand</h1>
   </div>
 </template>
 
