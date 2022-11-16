@@ -7,8 +7,8 @@ const toggleMenu = () => {
 </script>
 
 <template>
-<header class="h-auto">
-  <div class="fixed z-50 w-full bg-white h-16 md:h-24 flex justify-between items-center">
+<header class="fixed h-16 md:h-24 w-full bg-white">
+  <div class="px-4 flex justify-between items-center h-full">
       <nuxt-link class="flex" to="/">
           <nuxt-img src="/logo.svg" alt="Het logo van Stichting met uitgestrekte hand." class="w-24 md:w-36" />
       </nuxt-link>

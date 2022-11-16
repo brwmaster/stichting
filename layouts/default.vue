@@ -4,8 +4,10 @@
 </script>
 
 <template>
-    <st-header />
-  <slot />
+    <div class="h-screen">
+        <st-header />
+        <slot />
+    </div>
 </template>
 
 <style scoped></style>
