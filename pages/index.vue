@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <div>
-
-  </div>
+  <st-landing />
 </template>
 
 <style scoped></style>
