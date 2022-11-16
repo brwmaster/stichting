@@ -8,4 +8,4 @@
   </div>
 </template>
 
-<style scopes></style>
+<style scoped></style>
