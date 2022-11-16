@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <div>
-    <h1>Stichting met uitgestrekte hand</h1>
-  </div>
+  <st-landing />
 </template>
 
 <style scoped></style>
