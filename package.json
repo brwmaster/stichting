@@ -5,8 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "codegen": "contentful-typescript-codegen --output @types/generated/contentful.d.ts"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27809804.194d2d6",
