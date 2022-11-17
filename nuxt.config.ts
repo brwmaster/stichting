@@ -5,7 +5,7 @@ export default defineNuxtConfig({
         configPath: '~/tailwind.ts'
     },
     image: {    
-        dir: 'assets/images'  
+        dir: 'public/assets/images'  
     },
     runtimeConfig: {
         public: {
