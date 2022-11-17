@@ -7,3 +7,4 @@ node_modules
 .env
 dist
 .DS_STORE
+assets/.DS_STORE
