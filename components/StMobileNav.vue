@@ -18,6 +18,7 @@ const props = withDefaults(
       >
         <div class="flex flex-col items-center pt-16">
           <nuxt-link class="pt-4 border-b-4 border-transparent hover:border-primary" to="/"><p class="leading-loose">Home</p></nuxt-link>
+          <nuxt-link class="pt-4 border-b-4 border-transparent hover:border-primary" to="/"><p class="leading-loose">Over ons</p></nuxt-link>
           <nuxt-link class="pt-4 border-b-4 border-transparent hover:border-primary" to="/"><p class="leading-loose">Nieuws</p></nuxt-link>
           <nuxt-link class="pt-4 border-b-4 border-transparent hover:border-primary" to="/"><p class="leading-loose">Projecten</p></nuxt-link>
           <nuxt-link class="pt-4 border-b-4 border-transparent hover:border-primary" to="/"><p class="leading-loose">Contact</p></nuxt-link>
