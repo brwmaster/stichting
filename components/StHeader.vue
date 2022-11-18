@@ -4,6 +4,9 @@ const isMenuOpen = ref(false)
 const toggleMenu = () => {
     return isMenuOpen.value = !isMenuOpen.value
 }
+
+const closeMenu = (value: boolean): boolean => isMenuOpen.value = value
+
 </script>
 
 <template>
@@ -15,7 +18,7 @@ const toggleMenu = () => {
       <Icon :name="isMenuOpen ? 'mdi:close' : 'mdi:menu-open'" size="3em" class="text-primary sm:hidden" @click="toggleMenu"/>
       <st-nav class="hidden sm:inline-block"/>
   </div>
-  <st-mobile-nav :isMenuOpen="isMenuOpen"/>
+  <st-mobile-nav @@closeMenu="closeMenu($event)" :isMenuOpen="isMenuOpen"/>
 </header>
 </template>
 
