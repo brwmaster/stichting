@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { useContentful } from '~~/composables/useContentful';
 
+const client = useContentful()
+
+console.log(await client.getEntries({limit: 3}))
 </script>
 
 <template>
