@@ -12,6 +12,8 @@ export default defineNuxtConfig({
         public: {
             space: process.env.CF_SPACE,
             accessToken: process.env.CF_ACCESS_TOKEN,    
+            contentTypeProject: process.env.CF_CONTENT_TYPE_PROJECTS,
+            contentTypeNieuws: process.env.CF_CONTENT_TYPE_NIEUWS
         }
     },
 })

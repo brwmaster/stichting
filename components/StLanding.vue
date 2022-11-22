@@ -2,8 +2,10 @@
 import { useContentful } from '~~/composables/useContentful';
 
 const client = useContentful()
+const runtimeConfig = useRuntimeConfig()
 
-console.log(await client.getEntries({limit: 3}))
+const entries = await (await client).getEntries({ content_type: runtimeConfig.public.contentTypeNieuws,  order: '-sys.createdAt', limit: 4})
+
 </script>
 
 <template>
@@ -12,6 +14,11 @@ console.log(await client.getEntries({limit: 3}))
       <h1 class="text-white text-center text-4xl md:text-5xl mb-4 md:mb-6">Stichting met uitgestrekte hand</h1>
       <p class="text-white text-sm md:text-md text-center leading-5">Laten we het goede doen, zonder op te geven, want als we niet verzwakken zullen we oogsten wanneer de tijd daarvoor gekomen is. Laten we dus, in de tijd die ons nog rest, voor iedereen het goede doen, vooral voor onze geloofsgenoten. (Galaten 6: 9 en 10)</p>
     </div>
+  </section>
+  <section class="flex justify-center mt-[-8rem]">
+    <div v-for="entry in entries.items">
+    <st-card :imageUrl="entry.fields.afbeelding.fields.file.url" :alt="entry.fields.afbeelding.fields.title" />
+  </div>
   </section>
 </template>
 

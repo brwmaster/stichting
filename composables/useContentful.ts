@@ -1,6 +1,6 @@
 import * as contentful from 'contentful'
 
-export const useContentful = () => {
+export const useContentful = async () => {
     const runtimeConfig = useRuntimeConfig()
 
     const config = {
