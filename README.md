@@ -1,4 +1,4 @@
-<img src="./assets/images/logo.svg" alt="logo" width="200"/>
+<img src="./public/images/logo.svg" alt="logo" width="200"/>
 
 # Stichting met uitgestrekte hand
 
