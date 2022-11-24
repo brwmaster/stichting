@@ -49,7 +49,7 @@ const closeMenu = () => emit('@closeMenu', false)
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  transform: translateX(220px);
+  transform: translateY(220px);
   opacity: 0;
 }
 </style>
