@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useContentful } from '~~/composables/useContentful';
 
-const client = useContentful()
+const { client } = await useContentful()
 const runtimeConfig = useRuntimeConfig()
 
-const entries = await (await client).getEntries({ content_type: runtimeConfig.public.contentTypeNieuws,  order: '-sys.createdAt', limit: 4})
+const entries = await client.getEntries({ content_type: runtimeConfig.public.contentTypeNieuws,  order: '-sys.createdAt', limit: 4})
 
 </script>
 

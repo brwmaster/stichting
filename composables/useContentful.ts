@@ -7,5 +7,7 @@ export const useContentful = async () => {
         space: runtimeConfig.public.space,
         accessToken: runtimeConfig.public.accessToken
     }
-    return contentful.createClient(config)
+    const client = contentful.createClient(config)
+
+    return { client }
 }
